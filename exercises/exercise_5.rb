@@ -13,3 +13,11 @@ puts Store.sum(:annual_revenue)
 
 puts "---Avg annual revenue---"
 puts Store.average(:annual_revenue)
+
+@over1M = Store.where("annual_revenue > ?", 1000000).count
+
+p "---Over 1M---"
+p @over1M
+# @over1M.each do |s| 
+#   puts "Name: #{s.name}- Annual Revenue:#{s.annual_revenue}"
+# end 
