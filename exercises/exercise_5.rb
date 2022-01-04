@@ -8,3 +8,8 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+puts "---Total Revenue---"
+puts Store.sum(:annual_revenue)
+
+puts "---Avg annual revenue---"
+puts Store.average(:annual_revenue)
