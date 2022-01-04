@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+print "What store name are you looking for? "
+store_name = gets.chomp
+
+puts "Going to add this store into the Database"
+
+store_name = Store.create(name: "#{store_name}").valid?
+
+
+puts store_name
